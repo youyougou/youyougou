@@ -7,6 +7,8 @@ from django.urls import reverse
 from reg_log.forms import UsersForm
 from reg_log.models import Users
 
+def index(request):
+    return render(request, 'yougou/index.html')
 
 def register(request):
     if request.method == 'GET':

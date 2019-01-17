@@ -4,6 +4,7 @@ from reg_log.views import *
 
 app_name = 'reg_log'
 urlpatterns = [
+    path('index/', index, name='index'),
     path('register/', register, name='reg'),
     path('login/', login, name='login')
 ]
